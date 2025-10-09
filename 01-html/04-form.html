@@ -9,7 +9,68 @@
   <body>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <p>
+          <label>
+            Name:
+            <input type="name" name="name" placeholder="Full Name" required />
+          </label>
+        </p>
+        <p>
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="name@pdx.edu"
+              required
+            />
+          </label>
+        </p>
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <ul>
+            <li>
+              <label
+                ><input
+                  type="radio"
+                  value="spongebob"
+                  name="character"
+                />Spongebob</label
+              >
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="sandy" name="character" />
+                Sandy
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="patrick" name="character" />
+                Patrick
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" value="watched" name="is_fan" />
+                Yes, I have watched all episodes!
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="memes" name="is_fan" />
+                Yes, its got the best memes.
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
     </main>
   </body>
