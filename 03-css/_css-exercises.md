@@ -25,21 +25,27 @@ Calculate the specificity of the rules below.
 
 ```css
 nav .list-item > a {
+    this is the element a that is an immediate child of the nav item with the class name list item
 }
 
 #main::first-letter {
+    this is the first letter of an element with the id element of "main"
 }
 
 input[type] {
+    this is an input element of the given type
 }
 
 section .main::first-line {
+    this is a section element, with class name main, and this applies only to the first line
 }
 
 nav ul.menu li#first a:not([class='visited']) {
+    this is for an anchor element that is not in the visited class, which is a child of the li element, with id first, which is a child of the ul element with class menu, which is a child of a nav element.
 }
 
 div ol li ul li ol li ul li a {
+    this is an anchor element, which is a child of a li element, which is a child of a ul element, which is a child of a li element, which is a child of an ol element, which is the child of an li, which is the child of a ul, which is the child of an li, which is the child of an ol, which is the child of a div.
 }
 ```
 

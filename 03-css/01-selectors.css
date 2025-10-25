@@ -9,13 +9,43 @@
 }
 
 /* Use attribute selectors for the first part of the exercise */
-
-li[class] {
-  color: var(--red);
+li {
+  font-weight: bold;
+}
+.dog {
+  color: magenta;
+}
+#cat {
+  color: turquoise;
+}
+.parrot {
+  color: limegreen;
+}
+.donkey {
+  color: rgb(105, 105, 207);
+}
+.hedgehog {
+  color: magenta;
+}
+.hedgehog + li {
+  color: rgb(105, 105, 207);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-section li {
-  color: var(--green);
+.first {
+  color: limegreen;
+}
+
+.first ~ li {
+  color: magenta;
+}
+
+.second + li {
+  color: rgb(105, 105, 207);
+}
+
+.list-cleaning li {
+  color: limegreen;
+  font-weight: bold;
 }
